@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript for the web</title>
+  </head>
+
+  <body>
+    <h2
+      class="card-panel teal lighten-2 white-text center"
+      style="margin: 0 0 1em 0"
+    >
+      JavaScript for the web
+    </h2>
+    <div class="container grey lighten-4" style="padding: 1em 1.5em">
+      <section id="get-access-to-the-dom">
+        <h4>Get access to the dom</h4>
+        <ul class="collection">
+          <li class="collection-item">
+            <div>
+              document.getElementsByTagName()<span class="secondary-content"
+                >returns a collection of all of the elements within the DOM with
+                that tag name</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.getElementsByClassName()<span class="secondary-content"
+                >returns a collection of all elements with a certain class</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.getElementById()<span class="secondary-content"
+                >returns the element with a given id</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.querySelector()<span class="secondary-content"
+                >returns the first element in the DOM that matches the given
+                selector(s)</span
+              >
+            </div>
+          </li>
+        </ul>
+        <ul class="collection with-header">
+          <li class="collection-header"><h5>document.querySelector()</h5></li>
+          <li class="collection-item">
+            <div>
+              document.querySelector('p')<span class="secondary-content">
+                returns the first
+                <code data-claire-semantic="text">&lt;p&gt;</code>element</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.querySelector('.text-white')<span
+                class="secondary-content"
+                >returns the first element with class text-white</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.querySelector('#art-001')<span class="secondary-content"
+                >returns the element with id attribute art-001</span
+              >
+            </div>
+          </li>
+          <li class="collection-item">
+            <div>
+              document.queryselector('p.text-white')<span
+                class="secondary-content"
+                >returns the first
+                <code data-claire-semantic="text">&lt;p&gt;</code> with class
+                text-white</span
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="modify-the-dom">
+        <h4 id="heading-modify">Modify the dom & handle EventListeners</h4>
+        <div>
+          <b>TASK:</b>
+          <p id="task-modify" class="card-panel teal lighten-2">
+            Modify the DOM by adding classes, style or extra content
+          </p>
+          <div class="card-panel white">
+            <h5>
+              add classes
+            </h5>
+            <code class="code-background">myButton.classList.add()</code>
+            <div class="button-group">
+              <button id="red-button" class="btn-small red lighten-1">
+                Red
+              </button>
+              <button id="green-button" class=" btn-small green lighten-1">
+                Green
+              </button>
+              <button id="blue-button" class="btn-small blue lighten-1">
+                Blue
+              </button>
+              <button id="none-button" class="btn-small grey lighten-1">
+                None
+              </button>
+            </div>
+          </div>
+          <div class="card-panel white">
+            <h5>
+              add style
+            </h5>
+            <code class="code-background">myButton.style.cssStyle = ''</code>
+            <div class="button-group">
+              <button id="padding-none-button" class="btn-small teal lighten-2">
+                no padding
+              </button>
+              <button
+                id="padding-large-button"
+                class="btn-small teal lighten-2"
+              >
+                large padding
+              </button>
+              <button id="reset-button" class="btn-small teal lighten-2">
+                reset
+              </button>
+            </div>
+          </div>
+        </div>
+        <p>
+          Add a new Post and delete the last one, but let first one untouched
+        </p>
+        <main id="article-section">
+          <article>
+            <h5>A Blog Post</h5>
+            <p>
+              Hide at bottom of staircase to trip human. Ask for petting. Roll
+              on the floor purring your whiskers off. Trip on catnip nap all
+              day, eat too much then proceed to regurgitate all over living room
+              carpet while humans eat dinner nya nya nyan. Attack the child
+              groom yourself 4 hours - checked, have your beauty sleep 18 hours
+              - checked, be fabulous for the rest of the day - checked playing
+              with balls of wool.
+            </p>
+          </article>
+        </main>
+        <div class="button-group">
+          <button id="add-post-button" class="btn-small teal lighten-2">
+            Add Post
+          </button>
+          <button id="remove-post-button" class="btn-small teal lighten-2">
+            Remove Last Post
+          </button>
+        </div>
+      </section>
+      <section id="listen-for-events"></section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+section {
+  margin: 2em 0;
+}
+
+article {
+  border: 1px solid #4db6ac;
+  border-radius: 5px;
+  margin-bottom: 0.3em;
+  width: 50%;
+  padding: 1em 2em;
+  background-color: #fff;
+}
+
+.code-background {
+  background-color: #ececec;
+  padding: 0.2em 0.4em;
+}
+
+.button-group {
+  padding: 1em 0;
+}
